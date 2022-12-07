@@ -17,11 +17,11 @@
                 <form action="" id="checkout">
                     <h4>Confirm Delivery Information</h4>
                     <div class="form-group">
-                        <label for="" class="control-label">Firstname</label>
+                        <label for="" class="control-label">First Name</label>
                         <input type="text" name="first_name" required="" class="form-control" value="<?php echo $_SESSION['login_first_name'] ?>">
                     </div>
                     <div class="form-group">
-                        <label for="" class="control-label">Email</label>
+                        <label for="" class="control-label">Last Name</label>
                         <input type="text" name="last_name" required="" class="form-control" value="<?php echo $_SESSION['login_last_name'] ?>">
                     </div>
                     <div class="form-group">

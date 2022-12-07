@@ -56,7 +56,7 @@
 			method:'POST',
 			data:{pid:'<?php echo $_GET['id'] ?>',qty:$('[name="qty"]').val()},
 			success:function(resp){
-				if(resp == 1 )
+				if(resp == 1)
 					alert_toast("Order successfully added to cart");
 					$('.item_count').html(parseInt($('.item_count').html()) + parseInt($('[name="qty"]').val()))
 					$('.modal').modal('hide')
