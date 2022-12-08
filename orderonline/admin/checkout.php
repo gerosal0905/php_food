@@ -55,12 +55,12 @@
             $.ajax({
                 url:"ajax.php?action=save_order",
                 method:'POST',
-                data:$(this).serialize();
+                data:$(this).serialize(),
                 success:function(resp){
                     if(resp==1){
                         alert_toast("Order successfully Placed.")
                         setTimout(function(){
-                            location.replace('index.php?page=home')
+                            location.replace('index.php?page=orders')
                         })
                     }
                 }
