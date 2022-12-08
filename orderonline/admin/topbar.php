@@ -9,12 +9,12 @@
 }
 </style>
 
-<nav class="navbar navbar-dark bg-dark fixed-top " style="padding:0;">
+<nav class="navbar navbar-dark bg-warning fixed-top " style="padding:0;">
   <div class="container-fluid mt-2 mb-2">
   	<div class="col-lg-12">
   		<div class="col-md-1 float-left" style="display: flex;">
   			<div class="logo">
-  				<i class="fa fa-building"></i>
+  				<i class="fa fa-utensils"></i>
   			</div>
   		</div>
       <div class="col-md-4 float-left text-white">
