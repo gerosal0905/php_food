@@ -196,6 +196,12 @@ Class Action {
 		if($save)
 			return 1;
 	}
+	function rem_cart(){
+		extract($_POST);
+		$delete = $this->db->query("DELETE FROM cart where id = ".$id);
+		if($delete)
+			return 1;
+	}
 	function get_cart_count(){
 		extract($_POST);
 		if(isset($_SESSION['login_user_id'])){

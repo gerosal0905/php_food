@@ -69,6 +69,11 @@ if($action == "add_to_cart"){
 	if($save)
 		echo $save;
 }
+if($action == "rem_cart"){
+	$save = $crud->rem_cart();
+	if($save)
+		echo $save;
+}
 if($action == "get_cart_count"){
 	$save = $crud->get_cart_count();
 	if($save)

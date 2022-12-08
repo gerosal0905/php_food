@@ -41,8 +41,11 @@
 	        		<div class="card-body">
 		        		<div class="row">
 			        		<div class="col-md-4" style="text-align: -webkit-center">
-			        			<a href="javascript:void(0)" class="rem_cart btn btn-sm btn-outline-danger" data-id="<?php echo $row['cid'] ?>"><i class="fa fa-trash"></i></a>
-			        			<img src="assets/img/<?php echo $row['img_path'] ?>" alt="">
+			        			<!-- <a href="javascript:void(0)" class="rem_cart btn btn-sm btn-outline-danger" data-id="<?php echo $row['cid'] ?>"><i class="fa fa-trash"></i></a> -->
+			        			
+								<!-- <button class="btn btn btn-sm btn-danger rem_cart" data-id='<?php echo $row['cid'] ?>'><i class="fa fa-trash"></i></button>
+								<h1> <?php echo $row['cid'] ?></h1> -->
+								<img src="assets/img/<?php echo $row['img_path'] ?>" alt="">
 			        		</div>
 			        		<div class="col-md-4">
 			        			<p><b><large><?php echo $row['name'] ?></large></b></p>
@@ -140,6 +143,28 @@
 			})
 
 		}
+		$('.rem_cart').click(function(){
+				_conf("Are you sure to delete this user?","rem_cart",[$(this).attr('data-id')])
+			}) 
+		function rem_cart($id){
+			console.log($id)
+			start_load()
+			$.ajax({
+			url:'admin/ajax.php?action=rem_cart',
+			method:'POST',
+			data:{id:[$(this).attr('data-id')]},
+				success:function(resp){
+					if(resp==1){
+						alert_toast("User successfully deleted",'success')
+						setTimeout(function(){
+							location.reload()
+						},1500)
+
+					}
+				}
+			})
+		}
+					
 		$('#checkout').click(function(){
 			if('<?php echo isset($_SESSION['login_user_id']) ?>' == 1){
 				location.replace("index.php?page=checkout")
