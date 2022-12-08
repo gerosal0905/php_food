@@ -15,7 +15,7 @@
 <?php include('./db_connect.php'); ?>
 <?php 
 if(isset($_SESSION['login_id']))
-header("location:index.php?page=home");
+header("location:index.php?page=orders");
 
 $query = $conn->query("SELECT * FROM system_settings limit 1")->fetch_array();
 		foreach ($query as $key => $value) {
@@ -125,7 +125,7 @@ $query = $conn->query("SELECT * FROM system_settings limit 1")->fetch_array();
 			},
 			success:function(resp){
 				if(resp == 1){
-					location.href ='index.php?page=home';
+					location.href ='index.php?page=orders';
 				}else{
 					$('#login-form').prepend('<div class="alert alert-danger">Username or password is incorrect.</div>')
 					$('#login-form button[type="button"]').removeAttr('disabled').html('Login');

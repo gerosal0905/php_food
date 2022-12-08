@@ -2,10 +2,10 @@
         <header class="masthead">
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-10 align-self-end mb-4 page-title">
+                    <div class="col-lg-10 align-self-end mb-4 ">
                     	<h3 class="text-white">Welcome to <?php echo $_SESSION['setting_name']; ?></h3>
                         <hr class="divider my-4" />
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#menu">Order Now</a>
+                        <a class="btn btn-dark btn-xl mb-4 js-scroll-trigger" href="#menu">Order Now</a>
 
                     </div>
                     
@@ -22,11 +22,11 @@
                     <div class="col-lg-3" style="margin-bottom: 50px;">
                      <div class="card menu-item ">
                         <img src="assets/img/<?php echo $row['img_path'] ?>" class="card-img-top" alt="..." >
-                        <div class="card-body">
+                        <div class="card-body" style="">
                           <h5 class="card-title" ><?php echo $row['name'] ?></h5>
                           <p class="card-text truncate" style="height:100px;"><?php echo $row['description'] ?></p>
                           <div class="text-center">
-                              <button class="btn btn-sm btn-outline-primary view_prod btn-block" data-id=<?php echo $row['id'] ?>><i class="fa fa-eye"></i> View</button>
+                              <button class="btn btn-sm btn-outline-dark view_prod btn-block" data-id=<?php echo $row['id'] ?>><i class="fa fa-eye"></i> View</button>
                               
                           </div>
                         </div>
