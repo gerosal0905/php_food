@@ -19,12 +19,12 @@
                     $qry = $conn->query("SELECT * FROM  product_list order by rand() ");
                     while($row = $qry->fetch_assoc()):
                     ?>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" style="margin-bottom: 50px;">
                      <div class="card menu-item ">
-                        <img src="assets/img/<?php echo $row['img_path'] ?>" class="card-img-top" alt="...">
+                        <img src="assets/img/<?php echo $row['img_path'] ?>" class="card-img-top" alt="..." >
                         <div class="card-body">
-                          <h5 class="card-title"><?php echo $row['name'] ?></h5>
-                          <p class="card-text truncate"><?php echo $row['description'] ?></p>
+                          <h5 class="card-title" ><?php echo $row['name'] ?></h5>
+                          <p class="card-text truncate" style="height:100px;"><?php echo $row['description'] ?></p>
                           <div class="text-center">
                               <button class="btn btn-sm btn-outline-primary view_prod btn-block" data-id=<?php echo $row['id'] ?>><i class="fa fa-eye"></i> View</button>
                               
