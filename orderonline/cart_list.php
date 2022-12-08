@@ -80,7 +80,7 @@
         					<p class="text-right"><b><?php echo number_format($total,2) ?></b></p>
         					<hr>
         					<div class="text-center">
-        						<button class="btn btn-block btn-outline-primary" type="button" id="checkout">Proceed to Checkout</button>
+        						<button class="btn btn-block btn-outline-dark" type="button" id="checkout">Proceed to Checkout</button>
         					</div>
         				</div>
         			</div>

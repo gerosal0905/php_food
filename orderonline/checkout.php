@@ -37,7 +37,7 @@
                     </div>  
 
                     <div class="text-center">
-                        <button class="btn btn-block btn-outline-primary">Place Order</button>
+                        <button class="btn btn-block btn-outline-dark">Place Order</button>
                     </div>
                 </form>
             </div>
