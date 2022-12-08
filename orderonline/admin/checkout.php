@@ -38,7 +38,7 @@
                     </div>  
 
                     <div class="text-center">
-                        <button class="btn btn-block btn-outline-primary">Confirm</button>
+                        <button class="btn btn-block btn-outline-dark">Confirm</button>
                     </div>
                 </form>
             </div>
